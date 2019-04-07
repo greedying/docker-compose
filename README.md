@@ -6,7 +6,7 @@
 
 # 列表
 
-## [nginx + php + mysql 环境](nginx-php-mysql)
+## [nginx + php ](nginx-php)
 
 
 ## [nginx 反向代理到 nginx 集群](nginx-cluster)

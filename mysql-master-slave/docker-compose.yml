@@ -1,0 +1,26 @@
+version: '3'
+services:
+
+  mysql-master:
+    image: mysql:5.7.25
+    container_name: mysql-master
+    volumes:
+      - ./db_master:/var/lib/mysql
+    ports:
+      - 3306
+    environment:
+      MYSQL_ROOT_PASSWORD: pwd123
+      MYSQL_DATABASE: test
+    volumes:
+      - ./master.cnf:/etc/mysql/mysql.conf.d/mysqld.cnf:ro
+
+  mysql-slave:
+    image: mysql:5.7.25
+    container_name: mysql-slave
+    volumes:
+      - ./slave.cnf:/etc/mysql/mysql.conf.d/mysqld.cnf:ro
+    ports:
+      - 3306
+    environment:
+      MYSQL_ROOT_PASSWORD: pwd123
+      MYSQL_DATABASE: test

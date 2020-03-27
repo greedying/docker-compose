@@ -12,7 +12,7 @@
 ## [nginx 反向代理到 nginx 集群](nginx-cluster)
 
 
-## [keepalived + nginx 实现高可](keepalived-nginx)
+## [keepalived + nginx 实现高可用](keepalived-nginx)
 
 
 ## [mysql 主从复制](mysql-master-slave)

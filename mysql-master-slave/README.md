@@ -1,7 +1,7 @@
 # mysql-master-slave
 
 
-first, run `docker-compse up` to start the docker
+first, run `docker-compose up` to start the docker
 
 ## config master db
 
